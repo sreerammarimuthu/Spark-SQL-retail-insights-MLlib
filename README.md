@@ -4,18 +4,21 @@ This project combines Spark SQL for analytics and Spark MLlib for regression mod
 
 ## Contents  
 
-`data/`: Subsets of synthetic retail datasets for SQL queries and machine learning tasks.  
+`data/`  
+Subsets of synthetic retail datasets for SQL queries and machine learning tasks.  
 - `subset_Customers.csv` - Randomly generated customer dataset with fields: ID, Name, Age, CountryCode, and Salary.  
 - `subset_Purchases.csv` - Synthetic purchase transactions with: TransID, CustID, TransTotal, TransNumItems, and TransDesc.
 - `subset_Combined_Dataset.csv` - Joined dataset of purchases and customers, used for regression modeling.
 
-`output/Spark-SQL/`: CSV outputs for each Spark SQL task, exported after query execution.  
+`output/Spark-SQL/`  
+CSV outputs for each Spark SQL task, exported after query execution.  
 - `subset_T1_Output.csv` - All purchases with TransTotal ≤ $600. (Subset of actual output: Top 50)  
 - `T2_Output.csv` - Summary stats (min, max, median) grouped by TransNumItems.
 - `T3_Output.csv` - Aggregated stats (item count + amount) for young customers (ages 18–25).
 - `subset_T4_Output.csv` - Customer pairs satisfying conditions on age, total purchase, and item count. (Subset of actual output: Top 50)  
 
-`utils+model/`: `retail-analytics.ipynb` - Notebook containing full pipeline, from data generation to SQL queries and ML models.  
+`utils+model/`   
+- `retail-analytics.ipynb` - Notebook containing full pipeline, from data generation to SQL queries and ML models.  
 
 ## Spark SQL Tasks  
 

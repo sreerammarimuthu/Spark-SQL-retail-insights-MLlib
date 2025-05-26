@@ -1,4 +1,4 @@
-# Spark SQL Retail Insights with MLlib
+# Spark SQL Retail Insights + MLlib Regression
 
 This project combines Spark SQL for analytics and Spark MLlib for regression modeling over large-scale retail data. Using generated customer and transaction datasets, we run SQL-based transformations and extract insights before applying and benchmarking four regression models to predict purchase total amounts.
 

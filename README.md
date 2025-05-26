@@ -26,9 +26,10 @@ This project combines Spark SQL for analytics and Spark MLlib for regression mod
 | T3       | Purchases by Young Customers (18–25)        | Aggregated total purchase count and amount per customer for ages 18 to 25.     |
 | T4       | Matching Customer Pairs Based on Conditions | Returned customer pairs satisfying combined conditions on age, amount & items. |
 
-All queries executed via SQL strings on Spark TempViews; outputs saved in /output/Spark-SQL/.   
+All queries executed via SQL strings on Spark TempViews, and then these outputs were saved in `/output/Spark-SQL/`.   
 
 ## Regression Model Performance
+
 | **Model**               | **RMSE** | **MAE** | **R²**     |
 | ----------------------- | -------- | ------- | ---------- |
 | Linear Regression       | 574.37   | 497.48  | -0.0000028 |
@@ -36,4 +37,4 @@ All queries executed via SQL strings on Spark TempViews; outputs saved in /outpu
 | Random Forest Regressor | 574.37   | 497.48  | -0.0000048 |
 | GBT Regressor           | 574.39   | 497.49  | -0.0000656 |
 
-Note: All models yielded similar performance — likely due to minimal feature signal in synthetic data.
+All models yielded similar performance, this happened likely due to minimal feature signal in our synthetic data.

@@ -2,12 +2,6 @@
 
 This project combines Spark SQL for analytics and Spark MLlib for regression modeling over large-scale retail data. Using generated customer and transaction datasets, we run SQL-based transformations and extract insights before applying and benchmarking four regression models to predict purchase total amounts.
 
-Synthetic retail data was generated using Faker and Spark DataFrames. SQL tasks were executed over the datasets using Spark SQL for fast filtering, grouping, and joins. Predictive modeling was applied on combined features (age, salary, item count) to estimate TransTotal using four MLlib regressors:
-- Linear Regression  
-- Decision Tree  
-- Random Forest  
-- Gradient Boosted Trees
-
 ## Contents  
 
 `data/`: Subsets of synthetic retail datasets for SQL queries and machine learning tasks.  

@@ -2,6 +2,24 @@
 
 This project combines Spark SQL for analytics and Spark MLlib for regression modeling over large-scale retail data. Using generated customer and transaction datasets, we run SQL-based transformations and extract insights before applying and benchmarking four regression models to predict purchase total amounts.
 
+## Dataset Description  
+
+Two large-scale synthetic datasets were generated for this project:   
+
+- **Customers Dataset** (`subset_Customers.csv`):  
+  - `ID`: Unique integer from 1 to 50,000
+  - `Name`: Random character string (10–20 chars, no commas)
+  - `Age`: Integer between 18 and 100
+  - `CountryCode`: Integer between 1 and 500
+  - `Salary`: Float between 100 and 10,000,000
+
+- **Purchases Dataset** (`subset_Purchases.csv`):
+  - `TransID`: Unique integer from 1 to 5,000,000
+  - `CustID`: Randomly references a customer ID (approx. 100 purchases per customer)
+  - `TransTotal`: Float between 10 and 2000
+  - `TransNumItems`: Integer between 1 and 15
+  - `TransDesc`: Random text string (20–50 chars, no commas)
+
 ## Contents  
 
 `data/`  (Subsets of synthetic retail datasets for SQL queries and machine learning tasks).  

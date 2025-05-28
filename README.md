@@ -49,7 +49,7 @@ Two large-scale synthetic datasets were generated for this project:
 
 All queries were executed using SQL strings on Spark TempViews, and outputs are saved to `/output/Spark-SQL/`.  
 
-## Regression Model Performance
+## Regression-Experiment Model Performance
 
 | **Model**               | **RMSE** | **MAE** | **R²**     |
 | ----------------------- | -------- | ------- | ---------- |
